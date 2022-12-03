@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/cad41023108/KEHUEISIN/server.py", line 4, in <module>
+    serve(flaskapp.app, listen='127.0.0.1:9136', threads=8)
+  File "/usr/local/lib/python3.10/dist-packages/waitress/__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "/usr/local/lib/python3.10/dist-packages/waitress/server.py", line 78, in create_server
+    last_serv = TcpWSGIServer(
+  File "/usr/local/lib/python3.10/dist-packages/waitress/server.py", line 244, in __init__
+    self.bind_server_socket()
+  File "/usr/local/lib/python3.10/dist-packages/waitress/server.py", line 361, in bind_server_socket
+    self.bind(sockaddr)
+  File "/usr/local/lib/python3.10/dist-packages/waitress/wasyncore.py", line 396, in bind
+    return self.socket.bind(addr)
+OSError: [Errno 98] Address already in use
